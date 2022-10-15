@@ -1,0 +1,21 @@
+name: Revo
+version: '${project.version}'
+main: reptudn.revopl.Core
+api-version: 1.17
+authors: [ Reptudn ]
+description: A Plugin inspired by the Revo gamemode on revinside.tv
+commands:
+  join:
+    usage: join
+    description: Join the game! (If no Game exists it should create one!)
+  create:
+    usage: create
+    description: Creates the game world for you.
+  reset:
+    usage: reset
+    description: Resets the Game Worlds
+  leave:
+    usage: leave
+    description: leaves the game
+    aliases: /l
+
