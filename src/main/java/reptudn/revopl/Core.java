@@ -17,7 +17,6 @@ public final class Core extends JavaPlugin {
 
     public static String PREFIX = "§5[VEYRO] §f";
     PluginManager pm = Bukkit.getServer().getPluginManager();
-    Console console = new Console();
 
     public static boolean gameRunning = false;
 
@@ -25,13 +24,13 @@ public final class Core extends JavaPlugin {
     public void onEnable() {
 
         try{
-            console.info("Loading Plugin...");
+            Console.info("Loading Plugin...");
             registerCommands();
             registerEvents();
         } catch (Exception e){
-            console.error("Loading FAILED!");
+            Console.error("Loading FAILED!");
         } finally {
-            console.log("Done!");
+            Console.log("Done!");
         }
 
     }

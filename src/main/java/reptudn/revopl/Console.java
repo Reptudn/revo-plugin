@@ -5,19 +5,15 @@ import org.bukkit.Color;
 
 public class Console {
 
-    public Console(){
-
-    }
-
-    public void log(String message){
+    public static void log(String message){
         Bukkit.getConsoleSender().sendMessage(Core.PREFIX + "§b" + message);
     }
 
-    public void error(String message){
+    public static void error(String message){
         Bukkit.getConsoleSender().sendMessage(Core.PREFIX + "§c" + message);
     }
 
-    public void info(String message){
+    public static void info(String message){
         Bukkit.getConsoleSender().sendMessage(Core.PREFIX + "§e" + message);
     }
 

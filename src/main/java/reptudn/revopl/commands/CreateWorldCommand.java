@@ -21,7 +21,6 @@ public class CreateWorldCommand implements CommandExecutor {
             WorldManager cw = new WorldManager();
             cw.createWorld();
         }
-
         return true;
     }
 }
